@@ -1,0 +1,41 @@
+div{
+  margin-top:10px;
+  width:0px;
+  height:0px;
+
+  border-top:250px inset white;
+  border-right:250px dotted purple;
+  /*反方向：border-bottom:250px solid white;
+  border-left:250px solid white*/
+  
+  background-color:purple;
+  box-shadow: 10px 10px 20px green;
+}
+div article{
+  float:right;
+  font-family: bold sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size:3em;
+  color:white;
+  border-width: 30px;
+  margin-top:-52px;
+  margin-right: -240px;
+ 
+
+  /*float:right ;
+
+position:fixed/absolute(margin-left:182px)而从margin-right来设置的话无论是什么值
+都不会发生变化;相对和绝对固定式z-size值不为0的。。。
+  */   
+}
+   div p{
+position: fixed;
+          font-family: bold sans-serif;
+  font-weight: bold;
+  font-size:2em;
+  border-width: 30px;
+  margin-top:10px;
+  margin-left:146px;
+  /*float:right;*/
+   }
