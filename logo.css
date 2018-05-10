@@ -23,10 +23,18 @@ div article{
   margin-right: -240px;
  
 
-  /*float:right ;
+  /*float:right ;width、margin-left、margin-right：能够auto（自适应宽度）。
 
 position:fixed/absolute(margin-left:182px)而从margin-right来设置的话无论是什么值
-都不会发生变化;相对和绝对固定式z-size值不为0的。。。
+都不会发生变化;相对和绝对固定式z-size值不为0的。。。指南第7章：width和right、left只有这
+三个值可以auto，如果设置其中两个属性为特定的值，那么要使得元素框的宽度等于父元素的width，
+要么默认第三个元素为0，要么将第三个元素设置为auto；
+在满足width+right+left（后两个是margin的宽度）+padding（默认为0）+border等于块元素的长度；
+所以在设置非auto值时，最后要满足于实际长度等于块长度。
+假设7个属性的和必须等于400像素，没有设置内边距或边框，而且右外边距和width设置为100px，
+左外边距设置为auto。那么左外边距的宽度将是200像素。
+特别的，在总和400下，设置三个非auto值为100px，那么browers将把右外边距重置为auto，使其实际
+等于400px。：右边重置遵循inline排列的规则
   */   
 }
    div p{
